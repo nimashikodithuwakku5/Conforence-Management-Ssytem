@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ITUM International Research Conference 2024</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1 class="welcome">Welcome to Admin Dashboard</h1>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2><br><br>
+        <ul>
+            <li><a href="http://localhost/New%20Web/home.html">Home</a></li>
+            <li><a href="http://localhost/New%20Web/schedule.html">Manage Tracks Schedule</a></li>
+            <li><a href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=research_db&table=researchers">Manage Participants</a></li>
+            <li><a href="http://localhost/New%20Web/login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Manage Conference</h1>
+
+        <section>
+            <h2>Track Management</h2>
+            <form id="track-form">
+                <label for="track-name">Track Name:</label>
+                <input type="text" id="track-name" required>
+                <button type="submit">Add Track</button>
+            </form>
+
+            <h3>Current Tracks</h3>
+            <ul id="track-list"></ul>
+        </section>
+
+        <section>
+            <h2>Manage Participants</h2>
+            <label for="track-select">Select Track:</label>
+            <select id="track-select">
+                <option value="">Choose...</option>
+                  <option value="Track 1">Track 1: Sustainable Infrastructure and Mechanical Systems</option>
+                  <option value="Track 2">Track 2: Renewable Energy Systems and Smart Grid Technologies</option>
+                  <option value="Track 3">Track 3: Sustainable Materials and Green Manufacturing Processes</option>
+                  <option value="Track 4">Track 4: Digital Solutions for Sustainable Engineering</option>
+                  <option value="Track 5">Track 5: Interdisciplinary Approaches to Sustainability in Education</option>
+            </select>
+
+            <h3>Participants in Selected Track</h3>
+            <p id="participants-count">0 participants</p>
+            <button id="add-participant-btn" disabled>Add Participant</button>
+        </section>
+    </div>
+
+    <script src="admin.js"></script>
+
+
+</body>
+</html>

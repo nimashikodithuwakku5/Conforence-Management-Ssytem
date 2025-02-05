@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>International Research Conference - 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login">
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="im.png" alt="ITUM Logo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="Proceedings">Proceedings</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="log_body">
+        <section id="login" class="login-section">
+            <h2>User Login</h2>
+            <form action="login.php" method="POST">
+                <div>
+                    <label for="category">Participation Category *</label>
+                    <div class="category">
+                        <select id="category" name="category" required>
+                            <option value="">Choose...</option>
+                            <option value="admin">Admin</option>
+                            <option value="participent">participent</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter email...">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password...">
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        © ITUM International Conference Day-2024. All Rights Reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="register">
+    <nav>
+        <div class="logo">
+            <img src="im.png" alt="ITUM Logo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Information.html">Information</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html" class="active">Register</a></li>
+            <li><a href="proceedings.html">Proceedings</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            
+        </ul>
+    </nav>
+
+  <br><br>
+
+    <div class="imgrow">
+      <img src="bg5.jpg">
+      <img src="3.1.jpg">
+      <img src="bg3.jpg">
+      <img src="bg4.jpg">
+      <img src="bg2.jpg">
+    </div>
+  
+
+  <div class="reg">
+    <div class="container-reg">
+      <h1>Conference Registration</h1>
+      <div class="registration-details">
+        <h2>Registration Fee</h2>
+        <ul>
+          <li>Presenters (local): <span>LKR 5000</span></li>
+          <li>Presenters (foreign): <span>USD 50</span></li>
+          <li>Participants (local): <span>LKR 2000</span></li>
+        </ul>
+  
+        <h2>Mode of Payment: Bank Transfer</h2>
+        <ul>
+          <li><b>Bank Name:</b> Bank of Ceylon</li>
+          <li><b>Account Name:</b> Institute of Technology University of Moratuwa</li>
+          <li><b>Account Number:</b> 83062337</li>
+          <li><b>SWIFT Code:</b> BCEYLKLX 0568</li>
+          <li><b>Branch:</b> Homagama branch</li>
+        </ul>
+  
+        <h2>Payment Instructions</h2>
+        <ul class="instructions">
+          <li>🟢 Mention your NIC during the deposit as a reference.</li>
+          <li>🟢 Attach the bank slip to the registration form, clearly indicating the name of the participant.</li>
+        </ul>
+      </div>
+      <a href="#login" class="register-btn">REGISTER HERE</a>
+    </div>
+  </div>
+
+  <div class="body3">
+    <section id="login" class="register-section">
+      <h2>Registration Form</h2>
+      <form action="register.php" method="POST">
+        <div class="form-container">
+          <h1>ITUM International Research Conference 2024</h1>
+          <p>Conference Registration Form</p>
+      
+              <label for="name">Name with Initials *</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+              <label for="category">Participation Category *</label>
+              <select id="category" name="category" required>
+                  <option value="">Choose...</option>
+                  <option value="Admin">Admin</option>
+                  <option value="participent">participent</option>
+              </select>
+  
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+              <label for="nic">NIC / Passport No *</label>
+              <input type="text" id="nic" name="nic" placeholder="Enter your NIC/Passport No" required>
+  
+              <label for="phone">Mobile Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
+  
+              <label for="country">Country *</label>
+              <input type="text" id="country" name="country" placeholder="Enter your country" required>
+  
+              
+              <label for="track">Track</label>
+              <select id="track" name="track">
+                  <option value="">Choose...</option>
+                  <option value="Track 1">Track 1: Sustainable Infrastructure and Mechanical Systems</option>
+                  <option value="Track 2">Track 2: Renewable Energy Systems and Smart Grid Technologies</option>
+                  <option value="Track 3">Track 3: Sustainable Materials and Green Manufacturing Processes</option>
+                  <option value="Track 4">Track 4: Digital Solutions for Sustainable Engineering</option>
+                  <option value="Track 5">Track 5: Interdisciplinary Approaches to Sustainability in Education</option>
+              </select>
+  
+  
+              <label for="slip">slip code *</label>
+              <input type="text" id="slip" name="slip" placeholder="Enter your slip code" required>
+
+              <label for="password">Password *</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+              <label for="confirm_password">Confirm Password *</label>
+              <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter your password" required>
+
+  
+              <button type="submit">Submit</button>
+          </form>
+          <p class="note">Powered by <a href="#">ITUM Conference</a>.</p>
+      </div>
+       </section>
+  </div>
+
+
+  <br><br>
+  
+  <footer class="footer">
+    © ITUM International Conference Day-2024. All Rights Reserved.
+</footer>
+
+<script src="register.js"></script>
+
+</body>
+</html>
